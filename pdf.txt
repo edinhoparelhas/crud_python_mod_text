@@ -1,0 +1,77 @@
+1. Introdução
+Este documento especifica de forma resumida os requisitos do Sistema
+ClinicControl, fornecendo aos desenvolvedores as informações necessárias
+para a sua implementação, bem como a realização dos testes e homologação
+do sistema.
+Vale salientar que estes requisitos podem diferir de detalhes de
+implementação em futuras reuniões particulares com o próprio cliente,
+observando-se, porém, que vários pequenos requisitos emergirão de forma
+natural e ficarão de fora desse tipo de formalização textual.
+2. Descrição Geral do Sistema
+Em um consultório médico existem médicos (que possuem especialização
+em uma ou mais áreas), funcionários encarregados da limpeza e funcionários
+responsáveis pelo atendimento aos pacientes.
+Para os funcionários é importante armazenar o nome, rg, endereço
+residencial e telefone. Os funcionários que fazem atendimentos aos pacientes
+devem possuir curso superior em enfermagem, sendo necessário armazenar o
+ano de conclusão da graduação, a faculdade cursada e qual foi o titulo do projeto
+final elaborado.
+Para os médicos é importante saber o número no CRM e todos os possíveis
+telefones de contato, caso haja alguma emergência. Os médicos do consultório
+podem ou não ser credenciados a um ou mais convênios.
+Os convênios possuem sigla, nome telefone e hospital que realiza os
+exames. Para os pacientes é importante armazenar o rg, nome, endereços e
+seus telefones de contato. Um paciente pode realizar várias consultas com vários
+médicos. No entanto, um médico atende um paciente de cada vez. As consultas
+devem ser agendadas com antecedência, sendo indicado nesse momento se o
+paciente é conveniado ou não. Uma vez que o agendamento tenha sido
+realizado, um e-mail de confirmação deverá ser enviado ao paciente.
+3. Requisitos não funcionais
+Requisitos não funcionais são as características e aspectos internos do
+sistema envolvendo especificamente a parte técnica. Esses requisitos mapeiam
+os aspectos qualitativos de um software, muitas vezes ditando como certos
+aspectos devem funcionar.
+De acordo com as exigências do Cliente, o sistema deverá obrigatoriamente:
+ Executar em qualquer computador independentemente de Sistema
+Operacional (Portabilidade);
+ Ser um Sistema Desktop Monousuário;
+ Possuir Interface gráfica
+ Exigir o controle de Login e Senha para acesso;
+ Sistema a prova de falhas (Para isso ser possível o mesmo deverá ser
+testado. Efetue os testes de Unidade)
+4. Prazos e Reuniões
+Serão feitas reuniões semanais e/ou quinzenais com o cliente juntamente
+com o professor mediador para certificar e garantir o andamento do projeto.
+Primeira parte do projeto deve ser entregue no dia 28/11/2023
+O prazo final para entrega do sistema será dia 19/12/2023
+Prova pra quem não entregar o projeto será no dia 02/01/2023
+Prova pra quem ficou na final: 09/01/2023
+5. Considerações Finais
+O armazenamento dos dados do Sistema deverá ser feito usando listas.
+Porém, existe uma grande probabilidade que o mesmo seja alterado para
+trabalhar com arquivos.
+O pagamento do sistema será feito em notas. Caso o seu sistema esteja
+de acordo com tudo o que foi solicitado pelo cliente, certamente sua nota será
+boa, caso contrário irá receber pouco por isso.
+O aluno que implementar todo o sistema, salvar os dados em arquivo
+e for bem avaliado pelo Cliente, nem precisará fazer a prova escrita. Para os
+que não conseguirem, mas arduamente tentarem, o projeto terá peso 50.
+Esse projeto, uma vez concluído, mesmo que imparcialmente, vai lhe
+proporcionar não apenas uma nota, mas sim um vasto conhecimento que irá
+fazer com que as próximas disciplinas de programação se tornem realmente
+fáceis. Afinal, estamos aprendendo da melhor forma possível, que é no
+desenvolvimento de um sistema real utilizando toda a teoria vista em sala de
+aula. Copiando e/ou camuflando um projeto de outrem pode até fazer você
+achar que estará me enganando, mas na verdade você estará se enganando.
+Portanto, tente fazer você mesmo, aprenda com os seus erros, evolua a cada
+novo método, a cada nova classe e principalmente a cada Excpetion
+Sinta-se livre para implementar da forma que quiser. O que será levado
+em consideração é a sua capacidade de pensar Orientado a Objetos. Por
+isso modularize tanto quanto possível e cabível. Caso não consiga fazer o
+sistema por completo não tem problema. O importante aqui é você
+PROGRAMAR.
+Que comecem os Jogos.
+
+# problemas em alterar funcionarios(qndo o tipo do atributo não é um objeto e sim um tipo classe)
+# nao consigo encontrar os agendamentos povoados para excluir ou alterar ou exibir individual
+#cadastrar agendamento (ao varer exibe todas as condições )
