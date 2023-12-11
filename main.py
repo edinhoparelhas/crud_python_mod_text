@@ -410,7 +410,7 @@ while cont >= 0:
                             break
                         elif resp == "1":
                             data=input("DATA: ")
-                            horario=input("HORARIO: ")
+                            horario=float(input("HORARIO: "))
                             agend=empresa.get_agendamento_convenio(data,horario)
                             if agend !=None:
                                 print("data e horario já está agendado")
@@ -443,7 +443,7 @@ while cont >= 0:
                                     break
                         elif resp=="2":
                             data=input("DATA: ")
-                            horario=input("HORARIO: ")
+                            horario=float(input("HORARIO: "))
                             agend=empresa.get_agendamento_nao_conveniado(data,horario)
                             if agend!=None:
                                 print("data e horario já está agendado")
@@ -474,7 +474,7 @@ while cont >= 0:
                             print("opcão invalida")
                 elif opcao==ALTERAR_AGENDAMENTO_CONVENIO:
                     data=input("DATA: ")
-                    horario=input("HORARIO: ")
+                    horario=float(input("HORARIO: "))
                     agendamento=empresa.get_agendamento_convenio(data,horario)
                     if agendamento!=None:
                         print("ALTERAR AGENDAMENTO CONVÊNIO")
@@ -489,7 +489,7 @@ while cont >= 0:
                         print ("não existe agendamento para essa data/hora")
                 elif opcao==ALTERAR_AGENDAMENTO_NAO_CONVENIADO:
                     data=input("DATA: ")
-                    horario=input("HORARIO: ")
+                    horario=float(input("HORARIO: "))
                     agendamento=empresa.get_agendamento_nao_conveniado(data,horario)
                     if agendamento!=None:
                         print("ALTERAR AGENDAMENTO NÃO CONVÊNIO")
@@ -505,7 +505,7 @@ while cont >= 0:
                 elif opcao==REMOVER_AGENDAMENTO_CONVENIO:
                     print ("REMOVER AGENDAMENTO CONVÊNIO")
                     data=input("data do agendammento: ")
-                    horario=input("horario do agendamento: ")
+                    horario=float(input("horario do agendamento: "))
                     verif=empresa.remover_agendamento_convenio(data,horario)
                     if verif==True:
                         print ("agendamento removido com sucesso")
@@ -514,7 +514,7 @@ while cont >= 0:
                 elif opcao==REMOVER_AGENDAMENTO_NAO_CONVENIADO:
                     print ("REMOVER AGENDAMENTO NÃO CONVÊNIADO")
                     data=input("data do agendammento: ")
-                    horario=input("horario do agendamento: ")
+                    horario=float(input("horario do agendamento: "))
                     verif=empresa.remover_agendamento_nao_conveniado(data,horario)
                     if verif==True:
                         print ("agendamento removido com sucesso")
@@ -535,7 +535,7 @@ while cont >= 0:
                 elif opcao == DADOS_AGENDAMENTO_CONVENIO:
                     print("AGENDAMENTO POR CONVÊNIO")
                     data=input('digite a data do agendamento: ')
-                    horario=input ("digite o horario agendado: ")
+                    horario=float(input ("digite o horario agendado: "))
                     agendamento=empresa.get_agendamento_convenio(data,horario)
                     if agendamento!=None:
                         print(agendamento)
@@ -544,7 +544,7 @@ while cont >= 0:
                 elif opcao == DADOS_AGENDAMENTO_NAO_CONVENIADO:
                     print("AGENDAMENTO NÃO CONVÊNIADO")
                     data=input('digite a data do agendamento: ')
-                    horario=input ("digite o horario agendado: ")
+                    horario=float(input ("digite o horario agendado: "))
                     agendamento=empresa.get_agendamento_nao_conveniado(data,horario)
                     if agendamento!=None:
                         print(agendamento)
