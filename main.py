@@ -236,7 +236,7 @@ while cont >= 0:
                             print("DADOS DO MEDICO")
                             crm=input('digite o CRM do medico: ')
                             medico=empresa.get_medico_crm(crm)
-                            if medico==None:
+                            if medico==None or medico.ativo==False:
                                 print ('CRM não encontrado')
                             else:
                                 if medico.crm==crm:
@@ -245,7 +245,7 @@ while cont >= 0:
                             print("DADOS DO FUNC. LIMPEZA")
                             rg=input('digite o rg do funcionario: ')
                             func_limp=empresa.get_func_limpeza(rg)
-                            if func_limp==None:
+                            if func_limp==None or func_limp==False:
                                 print ('rg não encontrado')
                             else:
                                 if func_limp.rg==rg:
@@ -255,7 +255,7 @@ while cont >= 0:
                             print("DADOS DO FUNC. ATENDIMENTO")
                             rg=input('digite o rg do funcionario: ')
                             func_atend=empresa.get_func_atendimento(rg)
-                            if func_atend==None:
+                            if func_atend==None or func_atend==False:
                                 print ('rg não encontrado')
                             else:
                                 if func_atend.rg==rg:
@@ -326,7 +326,7 @@ while cont >= 0:
                         print("CLIENTE")
                         rg=input('digite o rg do cliente: ')
                         cliente=empresa.get_cliente(rg)
-                        if cliente==None:
+                        if cliente==None or cliente==False:
                             print ('cpf não encontrado')
                         else:
                             if cliente.rg==rg:
@@ -389,7 +389,7 @@ while cont >= 0:
                         print("DADOS DO CONVÊNIO")
                         sigla=input("digite a sigla do convênio: ")
                         convenio=empresa.get_convenio(sigla)
-                        if convenio==None:
+                        if convenio==None or convenio==False:
                             print("convenio não encontrado")
                         else: 
                             print(convenio)

@@ -73,5 +73,5 @@ PROGRAMAR.
 Que comecem os Jogos.
 
 # problemas em alterar funcionarios(qndo o tipo do atributo não é um objeto e sim um tipo classe)
-# nao consigo encontrar os agendamentos povoados para excluir ou alterar ou exibir individual
+
 #cadastrar agendamento (ao varer exibe todas as condições )
