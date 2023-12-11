@@ -245,7 +245,7 @@ while cont >= 0:
                             print("DADOS DO FUNC. LIMPEZA")
                             rg=input('digite o rg do funcionario: ')
                             func_limp=empresa.get_func_limpeza(rg)
-                            if func_limp==None or func_limp==False:
+                            if func_limp==None or func_limp.ativo==False:
                                 print ('rg não encontrado')
                             else:
                                 if func_limp.rg==rg:
@@ -255,7 +255,7 @@ while cont >= 0:
                             print("DADOS DO FUNC. ATENDIMENTO")
                             rg=input('digite o rg do funcionario: ')
                             func_atend=empresa.get_func_atendimento(rg)
-                            if func_atend==None or func_atend==False:
+                            if func_atend==None or func_atend.ativo==False:
                                 print ('rg não encontrado')
                             else:
                                 if func_atend.rg==rg:
@@ -326,7 +326,7 @@ while cont >= 0:
                         print("CLIENTE")
                         rg=input('digite o rg do cliente: ')
                         cliente=empresa.get_cliente(rg)
-                        if cliente==None or cliente==False:
+                        if cliente==None or cliente.ativo==False:
                             print ('cpf não encontrado')
                         else:
                             if cliente.rg==rg:
@@ -389,7 +389,7 @@ while cont >= 0:
                         print("DADOS DO CONVÊNIO")
                         sigla=input("digite a sigla do convênio: ")
                         convenio=empresa.get_convenio(sigla)
-                        if convenio==None or convenio==False:
+                        if convenio==None or convenio.ativo==False:
                             print("convenio não encontrado")
                         else: 
                             print(convenio)
