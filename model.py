@@ -206,7 +206,7 @@ class Empresa:
         if medico!=None:
             medico.nome=novo_nome
             medico.telefone=novo_telefone
-            medico.especializacao=nova_especializacao
+            medico.especialidade=nova_especializacao
             return True
         return False
     
