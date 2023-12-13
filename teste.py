@@ -7,6 +7,16 @@ endereco="Rua José Cavalcante Nº 177 Parelhas RN"
 empresa=Empresa(nome,cnpj,endereco)
 povoar(empresa)
 
-verif=empresa.remover_agendamento_convenio(25,10.00)
+lista=empresa.lista_agendamento_convenios
+for agend in lista:
+    print(agend)
+    print("............")
+
+verif=empresa.remover_agendamento_convenio(20,10.00)
 
 print(verif)
+
+lista=empresa.lista_agendamento_convenios
+for agend in lista:
+    print(agend)
+    print("............")
