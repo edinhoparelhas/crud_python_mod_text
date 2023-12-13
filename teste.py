@@ -12,9 +12,13 @@ for agend in lista:
     print(agend)
     print("............")
 
-verif=empresa.remover_agendamento_convenio(20,10.00)
+data=21
+horario=10.00
 
-print(verif)
+
+verif=empresa.remover_agendamento_convenio(data,horario)
+
+print(f"\n{verif}\n")
 
 lista=empresa.lista_agendamento_convenios
 for agend in lista:
