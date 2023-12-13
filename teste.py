@@ -12,8 +12,8 @@ for agend in lista:
     print(agend)
     print("............")
 
-data=21
-horario=10.00
+data='26/10/2023'
+horario=10.30
 
 
 verif=empresa.remover_agendamento_convenio(data,horario)
