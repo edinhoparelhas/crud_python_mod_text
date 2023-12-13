@@ -522,14 +522,12 @@ while cont >= 0:
                         print("não existe agendamento para essa dataa/hora")    
                 elif opcao==LISTA_AGENDAMENTOS_CONVENIO_ATIVOS:
                     print('LISTA DE AGENDAMENTOS CONVENIO ATIVOS')
-                    agendamentos=empresa.agendamento_convenio_ativo()
-                    for agendamento in agendamentos:
+                    for agendamento in empresa.lista_agendamento_convenios:
                         print(agendamento)
                         print("------------------")
                 elif opcao==LISTA_AGENDAMENTOS_ATIVOS_NAO_CONVENIADOS:
                     print('LISTA DE AGENDAMENTOS NÃO CONVENIADOS ATIVOS')
-                    agendamentos=empresa.agendamento_ativo()
-                    for agendamento in agendamentos:
+                    for agendamento in empresa.lista_agendamentos:
                         print(agendamento)
                         print("------------------")
                 elif opcao == DADOS_AGENDAMENTO_CONVENIO:

@@ -234,20 +234,7 @@ class Empresa:
     def cadastrar_agendamento_convenio(self,agendamento):
         self.lista_agendamento_convenios.append(agendamento)
 
-    def agendamento_convenio_ativo(self):
-        agendamentos=[]
-        for agendamento in self.lista_agendamento_convenios:
-            if agendamento.ativo == True:
-                agendamentos.append(agendamento)
-        return agendamentos
     
-    def agendamento_ativo(self):
-        agendamentos=[]
-        for agendamento in self.lista_agendamentos:
-            if agendamento.ativo == True:
-                agendamentos.append(agendamento)
-        return agendamentos
-
     def cadastrar_agendamento(self,agendamento):
         self.lista_agendamentos.append(agendamento)
 
@@ -412,7 +399,7 @@ class Agendamento_convenio:
         self.cliente=cliente
         self.convenio=convenio
         self.medico=medico
-        self.ativo=True
+    
         
 
     def __str__(self):
@@ -424,7 +411,7 @@ class Agendamento_nao_conveniado:
         self.horario=horario
         self.cliente=cliente
         self.medico=medico
-        self.ativo=True
+        
         
 
     def __str__(self):
