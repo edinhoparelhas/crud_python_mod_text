@@ -506,17 +506,17 @@ while cont >= 0:
                     print ("REMOVER AGENDAMENTO CONVÊNIO")
                     data=input("data do agendammento: ")
                     horario=float(input("horario do agendamento: "))
-                    verif=empresa.remover_agendamento_convenio(data,horario)
-                    if verif==True:
+                    agendammento=empresa.remover_agendamento_convenio(data,horario)
+                    if agendamento!=None:
                         print ("agendamento removido com sucesso")
                     else:
-                        print("não existe agendamento para essa dataa/hora")              
+                        print("não existe agendamento para essa data/hora")              
                 elif opcao==REMOVER_AGENDAMENTO_NAO_CONVENIADO:
                     print ("REMOVER AGENDAMENTO NÃO CONVÊNIADO")
                     data=input("data do agendammento: ")
                     horario=float(input("horario do agendamento: "))
-                    verif=empresa.remover_agendamento_nao_conveniado(data,horario)
-                    if verif==True:
+                    agendamento=empresa.remover_agendamento_nao_conveniado(data,horario)
+                    if agendamento!=None:
                         print ("agendamento removido com sucesso")
                     else:
                         print("não existe agendamento para essa dataa/hora")    
