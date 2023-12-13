@@ -425,9 +425,7 @@ while cont >= 0:
                                         print(convenio)
                                         espec=input("ESPECIALIDADE: ")
                                         for medico in convenio.lista_medicos_convenio:
-                                            if medico.especialidade!=espec:
-                                               print ("especialidade não faz parte do convênio\n")
-                                            else:
+                                            if medico.especialidade==espec:
                                                 print (f"Dr.{medico.nome}")
                                                 print(medico.especialidade)
                                                 agendamento=Agendamento_convenio(data,horario,cliente,convenio,medico)
@@ -436,10 +434,15 @@ while cont >= 0:
                                                 email=Email(cliente.email)
                                                 email=empresa.cadastrar_email(email)
                                                 print("email enviado com sucesso")
+                                                aux=1
+                                                break  
+                                        if aux==None:
+                                                print ("especialidade não faz parte do convênio\n")
+                                                
                                     else:
                                         print ("convenio não faz parte da dessa empresa")
                                 else:
-                                    print("rg nao cadastrado")
+                                    print(" \nnão existe nenhum cliente cadastrado com esse rg")
                                     break
                         elif resp=="2":
                             data=input("DATA: ")
