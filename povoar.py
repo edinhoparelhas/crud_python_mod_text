@@ -91,17 +91,17 @@ def povoar(empresa):
 
     
     
-    agend_convenio1=Agendamento_convenio(20,10.00,cliente1,convenio3,medico5)
-    agend_convenio2=Agendamento_convenio(21,10.30,cliente2,convenio2,medico2)
-    agend_convenio3=Agendamento_convenio(22,11.00,cliente3,convenio1,medico1)
+    agend_convenio1=Agendamento_convenio('25/10/2023',10.00,cliente1,convenio3,medico5)
+    agend_convenio2=Agendamento_convenio('26/10/2023',10.30,cliente2,convenio2,medico2)
+    agend_convenio3=Agendamento_convenio('26/10/2023',11.00,cliente3,convenio1,medico1)
     
     empresa.cadastrar_agendamento_convenio(agend_convenio1)
     empresa.cadastrar_agendamento_convenio(agend_convenio2)
     empresa.cadastrar_agendamento_convenio(agend_convenio3)
 
-    agend_sem_convenio1=Agendamento_nao_conveniado(23,10.00,cliente1,medico3)
-    agend_sem_convenio2=Agendamento_nao_conveniado(24,10.30,cliente2,medico4)
-    agend_sem_convenio3=Agendamento_nao_conveniado(25,11.00,cliente3,medico6)
+    agend_sem_convenio1=Agendamento_nao_conveniado('26/10/2023',10.00,cliente1,medico3)
+    agend_sem_convenio2=Agendamento_nao_conveniado('26/10/2023',10.30,cliente2,medico4)
+    agend_sem_convenio3=Agendamento_nao_conveniado('26/10/2023',11.00,cliente3,medico6)
 
     empresa.cadastrar_agendamento(agend_sem_convenio1)
     empresa.cadastrar_agendamento(agend_sem_convenio2)
